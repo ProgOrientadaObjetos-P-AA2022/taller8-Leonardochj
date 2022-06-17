@@ -11,11 +11,22 @@ package paquete1;
  */
 public class Docente {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    protected String nombreProfesor;
+    protected String cedula;
+
+    public void establecerNombreDocente(String s) {
+        nombreProfesor = s;
     }
-    
+
+    public void establecerCedulaDocente(String s) {
+        cedula = s;
+    }
+
+    public String obtenerNombreDocente() {
+        return nombreProfesor;
+    }
+
+    public String obtenerCedulaDocente() {
+        return cedula;
+    }
 }
